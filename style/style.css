@@ -1,0 +1,159 @@
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-flex-v9-latin-regular.woff2") format("woff2");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #36384d;
+  font-family: "Roboto";
+  color: #242742;
+  font-size: 16px;
+}
+
+.card {
+  display: flex;
+  width: 928px;
+  padding: 24px;
+  gap: 64px;
+  background-color: white;
+  border-radius: 36px;
+  box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card__sign-up {
+  display: flex;
+  flex-direction: column;
+  padding: 73px 0 73px 40px;
+}
+
+.card__title {
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.card__description {
+  font-feature-settings: "clig" off, "liga" off;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 376px;
+  margin-bottom: 24px;
+}
+
+.card__item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card__text {
+  font-feature-settings: "clig" off, "liga" off;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.card__label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__span {
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.bottom {
+  margin-bottom: 40px;
+}
+
+.card__input {
+  display: inline-block;
+  width: 376px;
+  border: 0;
+  border-radius: 8px;
+  border: 1px solid rgba(25, 24, 43, 0.25);
+  padding: 16px 24px;
+  margin-bottom: 24px;
+}
+
+/* .card__input:focus {
+    outline: 0;
+  } */
+
+.card__button {
+  border-radius: 8px;
+  background: #242742;
+  padding: 18px;
+  color: #fff;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+}
+
+.card__button:active {
+  background: var(
+    --Gradient-1,
+    linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%)
+  );
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
+
+.card__about {
+  width: 400px;
+  border-radius: 16px;
+  border: 0px solid #19182b;
+  background: var(
+    --Gradient-1,
+    linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%)
+  );
+}
